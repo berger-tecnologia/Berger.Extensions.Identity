@@ -19,11 +19,9 @@ namespace Berger.Extensions.Identity.Tests
         {
             CreateDatabase();
         }
-
         protected void Initialize()
         {
         }
-
         protected void Cleanup()
         {
             DestroyDatabase();
