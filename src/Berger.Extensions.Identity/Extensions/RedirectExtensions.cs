@@ -5,7 +5,7 @@ namespace Berger.Extensions.Identity.Extensions
 {
     public static class RedirectExtensions
     {
-        public static void SetRedirect(this IApplicationBuilder app)
+        public static void ConfigureRedirect(this IApplicationBuilder app)
         {
             app.UseStatusCodePages
             (
@@ -14,7 +14,7 @@ namespace Berger.Extensions.Identity.Extensions
                     var response = context.HttpContext.Response;
 
                     if (response.StatusCode == (int)HttpStatusCode.Unauthorized || response.StatusCode == (int)HttpStatusCode.Forbidden)
-                        response.Redirect("/account/signin");
+                        response.Redirect("/account/denied");
 
                     if (response.StatusCode == (int)HttpStatusCode.NotFound)
                         response.Redirect("/notfound");
