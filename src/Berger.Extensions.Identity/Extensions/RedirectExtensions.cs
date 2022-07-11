@@ -14,7 +14,7 @@ namespace Berger.Extensions.Identity.Extensions
                     var response = context.HttpContext.Response;
 
                     if (response.StatusCode == (int)HttpStatusCode.Unauthorized || response.StatusCode == (int)HttpStatusCode.Forbidden)
-                        response.Redirect("/account/denied");
+                        response.Redirect("/account/signin");
 
                     if (response.StatusCode == (int)HttpStatusCode.NotFound)
                         response.Redirect("/notfound");
