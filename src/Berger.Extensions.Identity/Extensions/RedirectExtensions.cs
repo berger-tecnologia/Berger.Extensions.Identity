@@ -5,7 +5,7 @@ namespace Berger.Extensions.Identity.Extensions
 {
     public static class RedirectExtensions
     {
-        public static void SetRedirect(this IApplicationBuilder app)
+        public static void ConfigureRedirect(this IApplicationBuilder app)
         {
             app.UseStatusCodePages
             (

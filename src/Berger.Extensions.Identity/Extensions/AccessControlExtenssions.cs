@@ -10,7 +10,7 @@ namespace Berger.Extensions.Identity.Extensions
 {
     public static class AccessControlExtenssions
     {
-        public static void SetJwt(this IServiceCollection services, string issuer, string secret)
+        public static void ConfigureJwt(this IServiceCollection services, string issuer, string secret)
         {
             var encoded = Encoding.ASCII.GetBytes(secret);
 
@@ -36,7 +36,7 @@ namespace Berger.Extensions.Identity.Extensions
             );
         }
 
-        public static void SetAuthentication(this IApplicationBuilder app)
+        public static void ConfigureAuthentication(this IApplicationBuilder app)
         {
             app.UseCookiePolicy();
 
@@ -71,7 +71,7 @@ namespace Berger.Extensions.Identity.Extensions
                 });
         }
 
-        public static void SetAuthorization(this IApplicationBuilder app)
+        public static void ConfigureAuthorization(this IApplicationBuilder app)
         {
             app.UseAuthorization();
         }
