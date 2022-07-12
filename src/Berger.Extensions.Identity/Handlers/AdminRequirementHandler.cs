@@ -1,8 +1,7 @@
 ﻿using System.Security.Claims;
 using Microsoft.AspNetCore.Authorization;
-using Berger.Extensions.Identity.Requirements;
 
-namespace Berger.Extensions.Identity.Handlers
+namespace Berger.Extensions.Identity
 {
     public class AdminRequirementHandler : AuthorizationHandler<AdminRequirement>
     {

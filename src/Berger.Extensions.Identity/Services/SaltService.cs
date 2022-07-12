@@ -1,7 +1,6 @@
 ﻿using System.Security.Cryptography;
-using Berger.Extensions.Identity.Interfaces;
 
-namespace Berger.Extensions.Identity.Services
+namespace Berger.Extensions.Identity
 {
     public class SaltService : ISaltService
     {

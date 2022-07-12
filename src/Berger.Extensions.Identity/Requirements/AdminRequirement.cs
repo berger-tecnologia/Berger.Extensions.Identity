@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 
-namespace Berger.Extensions.Identity.Requirements
+namespace Berger.Extensions.Identity
 {
     public class AdminRequirement : IAuthorizationRequirement
     {

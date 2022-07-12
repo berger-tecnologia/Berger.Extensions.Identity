@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Berger.Extensions.Identity.Enums
+namespace Berger.Extensions.Identity
 {
     public enum AuditType
     {

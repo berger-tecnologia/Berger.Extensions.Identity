@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Http.Features;
 
-namespace Berger.Extensions.Identity.Extensions
+namespace Berger.Extensions.Identity
 {
     public static class IPExtensions
     {
