@@ -1,9 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
-using Berger.Extensions.Identity.Interfaces;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Berger.Extensions.Identity.Filters
+namespace Berger.Extensions.Identity
 {
     public class SecurityActionFilter : ActionFilterAttribute
     {

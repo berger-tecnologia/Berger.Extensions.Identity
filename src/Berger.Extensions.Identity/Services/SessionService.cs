@@ -1,9 +1,8 @@
 ﻿using System.Security.Claims;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Http.Features;
-using Berger.Extensions.Identity.Interfaces;
 
-namespace Berger.Extensions.Identity.Services
+namespace Berger.Extensions.Identity
 {
     public class SessionService : ISessionService
     {

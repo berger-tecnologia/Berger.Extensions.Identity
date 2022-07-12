@@ -1,8 +1,7 @@
 ﻿using System.Text;
-using Berger.Extensions.Identity.Interfaces;
 using Microsoft.AspNetCore.Cryptography.KeyDerivation;
 
-namespace Berger.Extensions.Identity.Services
+namespace Berger.Extensions.Identity
 {
     public class HashService : IHashService
     {

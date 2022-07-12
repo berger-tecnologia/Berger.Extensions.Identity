@@ -2,13 +2,12 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.IdentityModel.Tokens;
-using Berger.Extensions.Identity.Requirements;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 
-namespace Berger.Extensions.Identity.Extensions
+namespace Berger.Extensions.Identity
 {
-    public static class AccessControlExtenssions
+    public static class AccessControlExtensions
     {
         public static void ConfigureJwt(this IServiceCollection services, string issuer, string secret)
         {

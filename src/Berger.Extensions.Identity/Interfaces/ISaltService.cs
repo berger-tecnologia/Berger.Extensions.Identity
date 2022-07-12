@@ -1,4 +1,4 @@
-﻿namespace Berger.Extensions.Identity.Interfaces
+﻿namespace Berger.Extensions.Identity
 {
     public interface ISaltService
     {

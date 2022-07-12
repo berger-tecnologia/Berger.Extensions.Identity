@@ -1,7 +1,7 @@
 ﻿using System.Net;
 using Microsoft.AspNetCore.Builder;
 
-namespace Berger.Extensions.Identity.Extensions
+namespace Berger.Extensions.Identity
 {
     public static class RedirectExtensions
     {
