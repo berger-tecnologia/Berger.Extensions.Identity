@@ -6,11 +6,17 @@ namespace Berger.Extensions.Identity
 {
     public class SecurityActionFilter : ActionFilterAttribute
     {
-        private ISessionService _session;
+        #region Properties
+        public ISessionService _session;
+        #endregion
 
+        #region Constructors
         public SecurityActionFilter()
         {
         }
+        #endregion
+
+        #region Events
         public override void OnActionExecuting(ActionExecutingContext context)
         {
             _session = context.HttpContext.RequestServices.GetService<ISessionService>();
@@ -29,5 +35,6 @@ namespace Berger.Extensions.Identity
         public override void OnActionExecuted(ActionExecutedContext context)
         {
         }
+        #endregion
     }
 }
