@@ -1,6 +1,6 @@
 ﻿namespace Berger.Extensions.Accounts
 {
-    internal class Credential
+    public class Credential
     {
         #region Properties
         public CredentialType CredentialType { get; set; }
