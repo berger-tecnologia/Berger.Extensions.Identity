@@ -1,8 +1,6 @@
-﻿using Berger.Extensions.Entities;
-
-namespace Berger.Extensions.Accounts
+﻿namespace Berger.Extensions.Accounts
 {
-    public class Role : ISlug
+    public class Role
     {
         #region Properties
         public string Name { get; set; } = string.Empty;

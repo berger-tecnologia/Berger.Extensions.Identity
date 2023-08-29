@@ -1,12 +1,9 @@
-﻿using Berger.Extensions.Devices;
-
-namespace Berger.Extensions.Accounts
+﻿namespace Berger.Extensions.Accounts
 {
-    public class Reset : IDevice
+    public class Reset
     {
         #region Properties
         public Guid DeviceID { get; set; }
-        public Device Device { get; set; }
         #endregion
     }
 }

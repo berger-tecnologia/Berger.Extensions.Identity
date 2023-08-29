@@ -1,9 +1,8 @@
-﻿using Berger.Extensions.Devices;
-using Berger.Extensions.Entities;
+﻿using Berger.Extensions.Base;
 
 namespace Berger.Extensions.Accounts
 {
-    public class Session : BaseEntity, IDevice, ISecurityStamp, IIpAddress, IExpired
+    public class Session : BaseEntity, ISecurityStamp, IExpired
     {
         #region Properties
         public Guid? CountryID { get; set; }

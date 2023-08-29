@@ -1,8 +1,8 @@
-﻿using Berger.Extensions.Entities;
+﻿using Berger.Extensions.Base;
 
 namespace Berger.Extensions.Accounts
 {
-    public class Claim : BaseEntity, IName
+    public class Claim : BaseEntity
     {
         #region Methods
         public void SetName(string name)
