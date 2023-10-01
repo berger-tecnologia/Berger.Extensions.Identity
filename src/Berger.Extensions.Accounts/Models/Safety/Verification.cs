@@ -1,14 +1,11 @@
-﻿using Berger.Extensions.Base;
-
-namespace Berger.Extensions.Accounts
+﻿namespace Berger.Extensions.Accounts
 {
-    // , IVerified
-    public class Verification : ICode, IExpired
+    public class Verification
     {
         #region Properties
         public ChannelType ChannelType { get; set; }
         public Guid? PhoneID { get; set; }
-        public string Code { get; set; }
+        public string Code { get; set; } = string.Empty;
         public bool Verified { get; set; }
         public bool Expired { get; set; }
         public DateTime? StartsOn { get; set; }

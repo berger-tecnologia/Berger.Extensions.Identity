@@ -1,8 +1,6 @@
-﻿using Berger.Extensions.Base;
-
-namespace Berger.Extensions.Accounts
+﻿namespace Berger.Extensions.Accounts
 {
-    public class User : BaseEntity, IActive
+    public class User
     {
         #region Properties
         public string Name { get; set; } = string.Empty;

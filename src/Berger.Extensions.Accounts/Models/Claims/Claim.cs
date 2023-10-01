@@ -1,8 +1,6 @@
-﻿using Berger.Extensions.Base;
-
-namespace Berger.Extensions.Accounts
+﻿namespace Berger.Extensions.Accounts
 {
-    public class Claim : BaseEntity
+    public class Claim
     {
         #region Methods
         public void SetName(string name)
@@ -15,8 +13,8 @@ namespace Berger.Extensions.Accounts
         public string Name { get; set; } = string.Empty;
         public string Slug { get; set; } = string.Empty;
         public string Type { get; set; } = string.Empty;
-        public List<UserClaim> UserClaims { get; set; }
-        public List<RoleClaim> RoleClaims { get; set; }
+        public List<UserClaim> UserClaims { get; set; } = new List<UserClaim>();
+        public List<RoleClaim> RoleClaims { get; set; } = new List<RoleClaim>();
         #endregion
     }
 }
