@@ -8,8 +8,4 @@
 	<ItemGroup>
 		<Folder Include="Inputs\" />
 	</ItemGroup>
-	
-	<ItemGroup>
-	  <PackageReference Include="Berger.Extensions.Base" Version="1.0.0.3" />
-	</ItemGroup>
 </Project>

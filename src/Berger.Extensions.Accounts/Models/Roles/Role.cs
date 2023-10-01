@@ -8,7 +8,7 @@
         public string Description { get; set; } = string.Empty;
         public string ConcurrencyStamp { get; set; } = string.Empty;
         //public List<Module> Modules { get; set; } = null!;
-        public List<RoleClaim> RoleClaims { get; set; }
+        public List<RoleClaim> RoleClaims { get; set; } = new List<RoleClaim>();
         #endregion
 
         #region Methods

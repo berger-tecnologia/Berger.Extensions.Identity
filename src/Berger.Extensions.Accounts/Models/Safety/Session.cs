@@ -1,19 +1,17 @@
-﻿using Berger.Extensions.Base;
-
-namespace Berger.Extensions.Accounts
+﻿namespace Berger.Extensions.Accounts
 {
-    public class Session : BaseEntity, ISecurityStamp, IExpired
+    public class Session : ISecurityStamp
     {
         #region Properties
         public Guid? CountryID { get; set; }
         public Guid DeviceID { get; set; }
-        public string Token { get; set; }
-        public string RefreshToken { get; set; }
-        public string TokenIssuer { get; set; }
-        public string TokenAudience { get; set; }
-        public string SecurityStamp { get; set; }
-        public string IpAddress { get; set; }
-        public string Location { get; set; }
+        public string Token { get; set; } = string.Empty;
+        public string RefreshToken { get; set; } = string.Empty;
+        public string TokenIssuer { get; set; } = string.Empty;
+        public string TokenAudience { get; set; } = string.Empty;
+        public string SecurityStamp { get; set; } = string.Empty;
+        public string IpAddress { get; set; } = string.Empty;
+        public string Location { get; set; } = string.Empty;
         public bool Expired { get; set; }
         public bool Revoked { get; set; }
         public decimal? Latitude { get; set; }

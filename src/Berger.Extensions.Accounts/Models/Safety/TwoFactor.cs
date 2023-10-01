@@ -1,12 +1,10 @@
-﻿using Berger.Extensions.Base;
-
-namespace Berger.Extensions.Accounts
+﻿namespace Berger.Extensions.Accounts
 {
-    public class TwoFactor : BaseEntity
+    public class TwoFactor
     {
         #region Properties
-        public string Secret { get; set; }
-        public string Code { get; set; }
+        public string Secret { get; set; } = string.Empty;
+        public string Code { get; set; } = string.Empty;
         #endregion
     }
 }

@@ -4,9 +4,9 @@
     {
         #region Properties
         public Guid RoleID { get; set; }
-        public Role Role { get; set; }
+        public Role Role { get; set; } = new Role();
         public Guid ClaimID { get; set; }
-        public Claim Claim { get; set; }
+        public Claim Claim { get; set; } = new Claim();
         #endregion
     }
 }

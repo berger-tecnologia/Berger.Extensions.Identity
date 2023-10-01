@@ -2,7 +2,6 @@
 {
     public class SocialLogin
     {
-        // IProvider, 
         #region Properties
         public Guid ProviderID { get; set; }
         public string Name { get; set; } = string.Empty;

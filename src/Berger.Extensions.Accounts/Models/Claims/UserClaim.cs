@@ -11,7 +11,7 @@
 
         #region Properties
         public Guid ClaimID { get; set; }
-        public Claim Claim { get; set; }
+        public Claim Claim { get; set; } = new Claim();
         public string ClaimType { get; set; } = string.Empty;
         public string ClaimValue { get; set; } = string.Empty;
         #endregion
