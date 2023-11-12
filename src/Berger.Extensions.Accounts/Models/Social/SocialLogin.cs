@@ -3,7 +3,7 @@
     public class SocialLogin
     {
         #region Properties
-        public Guid ProviderID { get; set; }
+        public Guid ProviderId { get; set; }
         public string Name { get; set; } = string.Empty;
         public string Surname { get; set; } = string.Empty;
         public string DisplayName { get; set; } = string.Empty;

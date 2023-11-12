@@ -2,6 +2,6 @@
 {
     public interface IRole
     {
-        public Guid RoleID { get; }
+        public Guid RoleId { get; }
     }
 }
