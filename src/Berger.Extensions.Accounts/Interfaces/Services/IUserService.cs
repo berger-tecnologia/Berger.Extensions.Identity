@@ -1,10 +1,11 @@
-﻿namespace Berger.Extensions.Accounts
+﻿using Berger.Extensions.Abstractions;
+
+namespace Berger.Extensions.Accounts
 {
-    public interface IUserService
+    public interface IUserService : IService<User>
     {
         #region Methods
         bool Login();
-        List<User> Get();
         #endregion
     }
 }

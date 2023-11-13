@@ -7,7 +7,7 @@ namespace Berger.Extensions.Accounts
         #region Factories
         private readonly IMediaFactory _media;
         private readonly IAddressFactory _address;
-        private readonly IAttributeValueFactory _attributeValue;
+        //private readonly IAttributeValue _attributeValue;
         #endregion
 
         #region Factory Properties
@@ -87,9 +87,8 @@ namespace Berger.Extensions.Accounts
         }
         public void SetAttributeValues(Guid id, string name, string description)
         {
-            IAttributeValue values = _attributeValue.Create(id, name, description);
-
-            this.SetAttributeValues(values);
+            //IAttributeValue values = _attributeValue.Create(id, name, description);
+            //this.SetAttributeValues(values);
         }
         public void SetAddress(IAddress address)
         {
