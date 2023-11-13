@@ -4,7 +4,7 @@
     {
         #region Properties
         public ChannelType ChannelType { get; set; }
-        public Guid? PhoneID { get; set; }
+        public Guid? PhoneId { get; set; }
         public string Code { get; set; } = string.Empty;
         public bool Verified { get; set; }
         public bool Expired { get; set; }
@@ -41,7 +41,7 @@
         }
         public void SetPhoneId(Guid id)
         {
-            this.PhoneID = id;
+            this.PhoneId = id;
         }
         private string GenerateCode()
         {

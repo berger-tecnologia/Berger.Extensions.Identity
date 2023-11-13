@@ -3,8 +3,8 @@
     public class Session : ISecurityStamp
     {
         #region Properties
-        public Guid? CountryID { get; set; }
-        public Guid DeviceID { get; set; }
+        public Guid? CountryId { get; set; }
+        public Guid DeviceId { get; }
         public string Token { get; set; } = string.Empty;
         public string RefreshToken { get; set; } = string.Empty;
         public string TokenIssuer { get; set; } = string.Empty;
@@ -31,10 +31,6 @@
         public void SetLastUsed()
         {
             this.LastUsedOn = DateTime.UtcNow;
-        }
-        public void SetDeviceId(Guid id)
-        {
-            this.DeviceID = id;
         }
         public void SetToken(string token)
         {

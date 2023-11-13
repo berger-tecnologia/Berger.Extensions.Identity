@@ -5,12 +5,12 @@
         #region Methods
         public void SetRoleId(Guid id)
         {
-            this.RoleID = id;
+            this.RoleId = id;
         }
         #endregion
 
         #region Properties
-        public Guid RoleID { get; set; }
+        public Guid RoleId { get; set; }
         public Role Role { get; set; } = new Role();
         #endregion
     }
