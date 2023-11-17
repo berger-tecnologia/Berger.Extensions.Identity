@@ -1,4 +1,6 @@
-﻿namespace Berger.Extensions.Accounts
+﻿using Berger.Extensions.Abstractions;
+
+namespace Berger.Extensions.Accounts
 {
     public class UserRole : IRole
     {
