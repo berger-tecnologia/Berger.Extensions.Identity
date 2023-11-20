@@ -2,7 +2,7 @@
 
 namespace Berger.Extensions.Accounts
 {
-    public class User : BaseEntity, IUser<IGender>, IAttributeValued
+    public class User : BaseEntity, IUser<IGender>
     {
         #region Factories
         private readonly IMediaFactory _media;
@@ -10,11 +10,19 @@ namespace Berger.Extensions.Accounts
         //private readonly IAttributeValue _attributeValue;
         #endregion
 
+        #region Constructors
+        public User(IAddressFactory address, IMediaFactory media)
+        {
+            _media = media;
+            _address = address;
+        }
+        #endregion
+
         #region Factory Properties
         public IMedia Avatar { get; set; }
-        public List<IMedia> Medias { get; set; }
-        public List<IAddress> Addresses { get; set; }
-        public List<IAttributeValue> AttributeValues { get; set; }
+        public List<IMedia> Medias { get; set; } = new List<IMedia>();
+        public List<IAddress> Addresses { get; set; } = new List<IAddress>();
+        //public List<IAttributeValue> AttributeValues { get; set; }
         #endregion
 
         #region Factory Methods
@@ -76,15 +84,11 @@ namespace Berger.Extensions.Accounts
         public DateTime? VerifiedOn { get; set; }
         #endregion
 
-        #region Constructors
-        public User() { }
-        #endregion
-
         #region Methods
-        public void SetAttributeValues(IAttributeValue attributeValue)
-        {
-            AttributeValues.Add(attributeValue);
-        }
+        //public void SetAttributeValues(IAttributeValue attributeValue)
+        //{
+        //    AttributeValues.Add(attributeValue);
+        //}
         public void SetAttributeValues(Guid id, string name, string description)
         {
             //IAttributeValue values = _attributeValue.Create(id, name, description);
