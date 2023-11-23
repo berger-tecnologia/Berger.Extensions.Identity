@@ -11,6 +11,9 @@ namespace Berger.Extensions.Accounts
         #endregion
 
         #region Constructors
+        public User()
+        {
+        }
         public User(IAddressFactory address, IMediaFactory media)
         {
             _media = media;
