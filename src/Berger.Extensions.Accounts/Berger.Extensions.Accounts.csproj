@@ -12,4 +12,12 @@
 	<ItemGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
 		<PackageReference Include="Berger.Extensions.Abstractions" Version="1.0.0.7" />
 	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Interfaces\Claims\" />
+	  <Folder Include="Interfaces\Roles\" />
+	  <Folder Include="Interfaces\Security\" />
+	  <Folder Include="Interfaces\Services\" />
+	  <Folder Include="Interfaces\Sessions\" />
+	</ItemGroup>
 </Project>
