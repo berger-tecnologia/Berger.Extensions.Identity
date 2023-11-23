@@ -1,6 +1,8 @@
-﻿namespace Berger.Extensions.Accounts
+﻿using Berger.Extensions.Abstractions;
+
+namespace Berger.Extensions.Accounts
 {
-    public class UserClaim
+    public class UserClaim : BaseEntity
     {
         #region Methods
         public void SetClaimId(Guid id)

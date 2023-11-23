@@ -1,8 +1,11 @@
-﻿namespace Berger.Extensions.Accounts
+﻿using Berger.Extensions.Abstractions;
+
+namespace Berger.Extensions.Accounts
 {
-    public class SocialLogin
+    public class SocialLogin : BaseEntity
     {
         #region Properties
+        public Guid UserId { get; set; }
         public Guid ProviderId { get; set; }
         public string Name { get; set; } = string.Empty;
         public string Surname { get; set; } = string.Empty;

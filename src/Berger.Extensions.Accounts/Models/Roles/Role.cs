@@ -1,6 +1,8 @@
-﻿namespace Berger.Extensions.Accounts
+﻿using Berger.Extensions.Abstractions;
+
+namespace Berger.Extensions.Accounts
 {
-    public class Role
+    public class Role : BaseEntity
     {
         #region Properties
         public string Name { get; set; } = string.Empty;

@@ -48,8 +48,8 @@ namespace Berger.Extensions.Accounts
         public List<Guid> SelectedCategories { get; set; }
         public Guid? ProfileId { get; set; }
         public Guid? PreferenceId { get; set; }
-        public Guid? SecurityID { get; set; }
-        public Guid? PrivacyID { get; set; }
+        public Guid? SecurityId { get; set; }
+        public Guid? PrivacyId { get; set; }
         public Guid? EducationId { get; set; }
         public IGender Gender { get; set; }
         public string Login { get; set; } = string.Empty;

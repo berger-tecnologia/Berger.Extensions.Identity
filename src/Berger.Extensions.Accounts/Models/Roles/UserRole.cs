@@ -2,7 +2,7 @@
 
 namespace Berger.Extensions.Accounts
 {
-    public class UserRole : IRole
+    public class UserRole : BaseEntity, IRole
     {
         #region Methods
         public void SetRoleId(Guid id)
@@ -13,6 +13,7 @@ namespace Berger.Extensions.Accounts
 
         #region Properties
         public Guid RoleId { get; set; }
+        public Guid UserId { get; set; }
         public Role Role { get; set; } = new Role();
         #endregion
     }
