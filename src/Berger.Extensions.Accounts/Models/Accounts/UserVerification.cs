@@ -2,7 +2,7 @@
 
 namespace Berger.Extensions.Accounts
 {
-    public class UserVerification : BaseEntity, IInput
+    public class UserVerification : BaseEntity
     {
         public string Code { get; set; } = string.Empty;
         public Guid VerificationId { get; set; }

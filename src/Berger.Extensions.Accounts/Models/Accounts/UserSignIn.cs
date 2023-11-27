@@ -2,7 +2,7 @@
 
 namespace Berger.Extensions.Accounts
 {
-    public class UserSignIn : BaseEntity, IInput
+    public class UserSignIn : BaseEntity
     {
         public string Email { get; set; } = string.Empty;
         public string PhoneNumber { get; set; } = string.Empty;
@@ -10,5 +10,6 @@ namespace Berger.Extensions.Accounts
         public string ConfirmPassword { get; set; } = string.Empty;
         public bool RememberMe { get; set; } = true;
         public string ReturnUrl { get; set; } = string.Empty;
+        public string Token { get; set; } = string.Empty;
     }
 }

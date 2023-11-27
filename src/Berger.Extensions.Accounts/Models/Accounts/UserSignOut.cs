@@ -2,7 +2,7 @@
 
 namespace Berger.Extensions.Accounts
 {
-    public class UserSignOut : BaseEntity, IInput
+    public class UserSignOut : BaseEntity
     {
         public string LogoutId { get; set; } = string.Empty;
     }

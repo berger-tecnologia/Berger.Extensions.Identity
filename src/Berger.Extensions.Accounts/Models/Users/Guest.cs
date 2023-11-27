@@ -4,5 +4,6 @@ namespace Berger.Extensions.Accounts
 {
     public class Guest : BaseEntity
     {
+        public Guid? CountryId { get; set; }
     }
 }

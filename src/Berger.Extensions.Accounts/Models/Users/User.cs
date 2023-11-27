@@ -2,12 +2,11 @@
 
 namespace Berger.Extensions.Accounts
 {
-    public class User : BaseEntity, IUser<IGender>
+    public class User : BaseEntity, IUser<IGender>, IVerified, IActivated
     {
         #region Factories
         private readonly IMediaFactory _media;
         private readonly IAddressFactory _address;
-        //private readonly IAttributeValue _attributeValue;
         #endregion
 
         #region Constructors
@@ -18,26 +17,6 @@ namespace Berger.Extensions.Accounts
         {
             _media = media;
             _address = address;
-        }
-        #endregion
-
-        #region Factory Properties
-        public IMedia Avatar { get; set; }
-        public List<IMedia> Medias { get; set; } = new List<IMedia>();
-        public List<IAddress> Addresses { get; set; } = new List<IAddress>();
-        //public List<IAttributeValue> AttributeValues { get; set; }
-        #endregion
-
-        #region Factory Methods
-        public void SetAvatar(IMedia avatar)
-        {
-            this.Avatar = avatar;
-        }
-        public void SetAvatar(Guid id, string url)
-        {
-            IMedia media = _media.Create(id, url, false);
-
-            this.SetAvatar(media);
         }
         #endregion
 
@@ -85,17 +64,32 @@ namespace Berger.Extensions.Accounts
         public DateTime? LockedOn { get; set; }
         public DateTime? BannedOn { get; set; }
         public DateTime? VerifiedOn { get; set; }
+        public List<UserRole> UserRoles { get; set; } = new List<UserRole>();
+        #endregion
+
+        #region Factories
+        public IMedia Avatar { get; set; }
+        public List<IMedia> Medias { get; set; } = new List<IMedia>();
+        public List<IAddress> Addresses { get; set; } = new List<IAddress>();
+        #endregion
+
+        #region Factory Methods
+        public void SetAvatar(IMedia avatar)
+        {
+            this.Avatar = avatar;
+        }
+        public void SetAvatar(Guid id, string url)
+        {
+            IMedia media = _media.Create(id, url, false);
+
+            this.SetAvatar(media);
+        }
         #endregion
 
         #region Methods
-        //public void SetAttributeValues(IAttributeValue attributeValue)
-        //{
-        //    AttributeValues.Add(attributeValue);
-        //}
         public void SetAttributeValues(Guid id, string name, string description)
         {
-            //IAttributeValue values = _attributeValue.Create(id, name, description);
-            //this.SetAttributeValues(values);
+            throw new NotImplementedException();
         }
         public void SetAddress(IAddress address)
         {
@@ -133,6 +127,7 @@ namespace Berger.Extensions.Accounts
         }
         public void SetNationality(string name)
         {
+            throw new NotImplementedException();
         }
         #endregion
     }

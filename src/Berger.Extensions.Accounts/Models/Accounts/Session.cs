@@ -2,7 +2,7 @@
 
 namespace Berger.Extensions.Accounts
 {
-    public class Session : BaseEntity, IInput
+    public class Session : BaseEntity
     {
         #region Methods
         public void Revoke()
@@ -10,6 +10,14 @@ namespace Berger.Extensions.Accounts
             this.Revoked = true;
             this.RevokedOn = DateTime.UtcNow;
         }
+        public void SetUserId(Guid userId)
+        {
+            throw new NotImplementedException();
+        }
+        public void SetDeviceId(Guid deviceId)
+        {
+            throw new NotImplementedException();
+        }        
         public void SetLastUsed()
         {
             this.LastUsedOn = DateTime.UtcNow;

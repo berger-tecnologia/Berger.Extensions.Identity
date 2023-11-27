@@ -6,18 +6,11 @@
 	</PropertyGroup>
 
 	<ItemGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+		<ProjectReference Include="$(berger-open-source)\Berger.Extensions.Jwt\src\Berger.Extensions.Jwt\Berger.Extensions.Jwt.csproj" />
 		<ProjectReference Include="$(berger-open-source)\Berger.Extensions.Abstractions\src\Berger.Extensions.Abstractions\Berger.Extensions.Abstractions.csproj" />
+		<ProjectReference Include="$(berger-open-source)\Berger.Extensions.Configuration\src\Berger.Extensions.Configuration\Berger.Extensions.Configuration.csproj" />
 	</ItemGroup>
 
 	<ItemGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-		<PackageReference Include="Berger.Extensions.Abstractions" Version="1.0.0.7" />
-	</ItemGroup>
-
-	<ItemGroup>
-	  <Folder Include="Interfaces\Claims\" />
-	  <Folder Include="Interfaces\Roles\" />
-	  <Folder Include="Interfaces\Security\" />
-	  <Folder Include="Interfaces\Services\" />
-	  <Folder Include="Interfaces\Sessions\" />
 	</ItemGroup>
 </Project>

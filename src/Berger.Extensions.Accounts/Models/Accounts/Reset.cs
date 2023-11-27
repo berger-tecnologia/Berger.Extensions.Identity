@@ -2,7 +2,7 @@
 
 namespace Berger.Extensions.Accounts
 {
-    public class Reset : BaseEntity, IInput
+    public class Reset : BaseEntity
     {
         public Guid DeviceId { get; }
     }
