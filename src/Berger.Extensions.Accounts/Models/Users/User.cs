@@ -89,7 +89,7 @@ namespace Berger.Extensions.Accounts
         #region Methods
         public void SetAttributeValues(Guid id, string name, string description)
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
         }
         public void SetAddress(IAddress address)
         {
@@ -127,7 +127,7 @@ namespace Berger.Extensions.Accounts
         }
         public void SetNationality(string name)
         {
-            throw new NotImplementedException();
+            // throw new NotImplementedException();
         }
         #endregion
     }
