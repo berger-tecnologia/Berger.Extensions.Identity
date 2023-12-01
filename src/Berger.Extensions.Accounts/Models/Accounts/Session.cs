@@ -1,8 +1,6 @@
-﻿using Berger.Extensions.Abstractions;
-
-namespace Berger.Extensions.Accounts
+﻿namespace Berger.Extensions.Accounts
 {
-    public class Session : BaseEntity
+    public class Session : UserEntity
     {
         #region Methods
         public void Revoke()

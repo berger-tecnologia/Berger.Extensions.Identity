@@ -2,11 +2,9 @@
 
 namespace Berger.Extensions.Accounts
 {
-    public class UserRole : BaseEntity, IRole
+    public class UserRole : UserEntity, IRole
     {
         #region Properties
-        public Guid UserId { get; set; }
-        public User User { get; set; }
         public Guid RoleId { get; set; }
         public Role Role { get; set; }
         #endregion

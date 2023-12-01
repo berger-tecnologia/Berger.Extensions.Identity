@@ -2,7 +2,7 @@
 
 namespace Berger.Extensions.Accounts
 {
-    public class UserClaim : BaseEntity
+    public class UserClaim : UserEntity
     {
         #region Properties
         public Guid ClaimId { get; set; }

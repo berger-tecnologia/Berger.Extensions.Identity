@@ -26,6 +26,7 @@ namespace Berger.Extensions.Accounts
         public string Name { get; set; } = string.Empty;
         public string Surname { get; set; } = string.Empty;
         public string Email { get; set; } = string.Empty;
+        public string Mobile { get; set; }
         public List<Guid> SelectedClaims { get; set; }
         public List<Guid> SelectedCategories { get; set; }
         public Guid? ProfileId { get; set; }
@@ -40,9 +41,12 @@ namespace Berger.Extensions.Accounts
         public string Salt { get; set; } = string.Empty;
         public string SecurityStamp { get; set; } = string.Empty;
         public string ConcurrencyStamp { get; set; } = string.Empty;
+        public string Sub { get; set; } = string.Empty;
+        public string Torre { get; set; } = string.Empty;
+        public string Apartamento { get; set; } = string.Empty;
+        public string Bloco { get; set; } = string.Empty;
         public string Slug { get; set; } = string.Empty;
         public short? Prefix { get; set; }
-        public string Mobile { get; set; } = string.Empty;
         public bool Newsletter { get; set; }
         public bool Claimed { get; set; }
         public bool Online { get; set; }
@@ -65,12 +69,14 @@ namespace Berger.Extensions.Accounts
         public DateTime? BannedOn { get; set; }
         public DateTime? VerifiedOn { get; set; }
         public List<UserRole> UserRoles { get; set; } = new List<UserRole>();
+        
         #endregion
 
         #region Factories
         public IMedia Avatar { get; set; }
         public List<IMedia> Medias { get; set; } = new List<IMedia>();
         public List<IAddress> Addresses { get; set; } = new List<IAddress>();
+        string IUser<IGender>.Mobile { get; set; }
         #endregion
 
         #region Factory Methods

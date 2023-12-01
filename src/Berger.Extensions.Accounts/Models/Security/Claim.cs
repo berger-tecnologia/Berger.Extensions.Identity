@@ -1,8 +1,6 @@
-﻿using Berger.Extensions.Abstractions;
-
-namespace Berger.Extensions.Accounts
+﻿namespace Berger.Extensions.Accounts
 {
-    public class Claim : BaseEntity
+    public class Claim : UserEntity
     {
         #region Properties
         public string Name { get; set; } = string.Empty;

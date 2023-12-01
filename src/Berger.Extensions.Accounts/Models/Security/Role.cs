@@ -1,8 +1,6 @@
-﻿using Berger.Extensions.Abstractions;
-
-namespace Berger.Extensions.Accounts
+﻿namespace Berger.Extensions.Accounts
 {
-    public class Role : BaseEntity
+    public class Role : UserEntity
     {
         #region Properties
         public Guid? ApplicationId { get; set; }
