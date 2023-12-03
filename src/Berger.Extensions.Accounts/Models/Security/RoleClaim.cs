@@ -6,9 +6,9 @@ namespace Berger.Extensions.Accounts
     {
         #region Properties
         public Guid RoleId { get; set; }
-        public Role Role { get; set; } = new Role();
+        public Role Role { get; set; }
         public Guid ClaimId { get; set; }
-        public Claim Claim { get; set; } = new Claim();
+        public Claim Claim { get; set; }
         #endregion
     }
 }

@@ -6,8 +6,8 @@
         public string Name { get; set; } = string.Empty;
         public string Slug { get; set; } = string.Empty;
         public string Type { get; set; } = string.Empty;
-        public List<UserClaim> UserClaims { get; set; } = new List<UserClaim>();
-        public List<RoleClaim> RoleClaims { get; set; } = new List<RoleClaim>();
+        public List<UserClaim> UserClaims { get; set; }
+        public List<RoleClaim> RoleClaims { get; set; }
         #endregion
 
         #region Methods
