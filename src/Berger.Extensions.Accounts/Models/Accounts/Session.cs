@@ -1,6 +1,8 @@
-﻿namespace Berger.Extensions.Accounts
+﻿using Berger.Extensions.Abstractions;
+
+namespace Berger.Extensions.Accounts
 {
-    public class Session : UserEntity
+    public class Session : BaseEntity
     {
         #region Methods
         public void Revoke()
@@ -47,6 +49,7 @@
         #endregion
 
         #region Properties
+        public Guid UserId { get; }
         public Guid DeviceId { get; }
         public Guid? CountryId { get; set; }
         public string Token { get; set; } = string.Empty;

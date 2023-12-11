@@ -1,8 +1,12 @@
-﻿namespace Berger.Extensions.Accounts
+﻿using Berger.Extensions.Abstractions;
+
+namespace Berger.Extensions.Accounts
 {
-    public class UserClaim : UserEntity
+    public class UserClaim : BaseEntity
     {
         #region Properties
+        public Guid OrganizationId { get; set; }
+        public Guid UserId { get; set; }
         public Guid ClaimId { get; set; }
         public Claim Claim { get; set; }
         public string ClaimType { get; set; } = string.Empty;
