@@ -5,7 +5,6 @@ namespace Berger.Extensions.Accounts
     public class Role : BaseEntity
     {
         #region Properties
-        public Guid? OrganizationId { get; set; }
         public Guid? OwnerId { get; set; }
         public Guid? PlatformId { get; set; }
         public string Name { get; set; } = string.Empty;
