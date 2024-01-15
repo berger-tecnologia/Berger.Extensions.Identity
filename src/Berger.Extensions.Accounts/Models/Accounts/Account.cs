@@ -6,7 +6,6 @@ namespace Berger.Extensions.Accounts
     {
         #region Properties
         public Guid UserId { get; set; }
-        public User User { get; set; }
         public string Email { get; set; }
         public string Password { get; set; } = string.Empty;
         public string Mobile { get; set; }
@@ -22,7 +21,6 @@ namespace Berger.Extensions.Accounts
         public bool Locked { get; set; }
         public bool Expired { get; set; }
         public bool Active { get; set; }
-
         public DateTime? LastLogin { get; set; }
         public DateTime? Expiration { get; set; }
         public DateTime? RefreshTokenExpiration { get; set; }
