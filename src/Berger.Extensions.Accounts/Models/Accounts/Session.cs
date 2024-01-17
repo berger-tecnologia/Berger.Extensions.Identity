@@ -50,6 +50,7 @@ namespace Berger.Extensions.Accounts
 
         #region Properties
         public Guid UserId { get; }
+        public Guid CredentialId { get; }
         public Guid DeviceId { get; }
         public Guid? CountryId { get; set; }
         public string Token { get; set; } = string.Empty;

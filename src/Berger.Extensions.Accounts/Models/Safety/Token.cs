@@ -4,7 +4,7 @@ namespace Berger.Extensions.Accounts
 {
     public class TokenInput : BaseEntity, IInput
     {
-        public Guid AccountId { get; set; }
+        public Guid CredentialId { get; set; }
         public string Issuer { get; set; } = string.Empty;
         public string AccessToken { get; set; } = string.Empty;
         public string RefreshToken { get; set; } = string.Empty;

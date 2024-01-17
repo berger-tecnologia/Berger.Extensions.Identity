@@ -4,7 +4,7 @@ namespace Berger.Extensions.Accounts
 {
     public class Security : BaseEntity, IInput
     {
-        public Guid AccountId { get; set; }
+        public Guid CredentialId { get; set; }
         public string Passphrase { get; set; }
         public string AntiPhishingCode { get; set; }
         public bool TwoFactor { get; set; }
