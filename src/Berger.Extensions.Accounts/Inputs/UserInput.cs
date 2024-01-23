@@ -7,6 +7,7 @@ namespace Berger.Extensions.Accounts
         #region Properties
         public Guid? PrivacyId { get; set; }
         public Guid? ProfileId { get; set; }
+        public Guid? ParentId { get; set; }
         public Guid? SecurityId { get; set; }
         public Guid? PreferenceId { get; set; }
         public Guid? NationalityId { get; set; }
