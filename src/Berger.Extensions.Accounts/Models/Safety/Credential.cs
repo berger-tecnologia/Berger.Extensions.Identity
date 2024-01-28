@@ -21,7 +21,7 @@ namespace Berger.Extensions.Accounts
         public bool Expired { get; } = false;
         public bool Banned { get; set; }
         public bool Locked { get; set; }
-        public bool Active { get; set; }
+        public bool Active { get; set; } = true;
         public DateTime? StartsOn { get; }
         public DateTime? ExpiresOn { get; }
         public DateTime? LastLogin { get; set; }

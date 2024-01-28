@@ -7,7 +7,7 @@ namespace Berger.Extensions.Accounts
         #region Properties
         public Guid UserId { get; set; }
         public Guid RoleId { get; set; }
-        public Guid PlatformId { get; set; }
+        public Guid ApplicationId { get; set; }
         #endregion
 
         #region Navigation
