@@ -5,7 +5,7 @@ namespace Berger.Extensions.Identity
     public class Claim : BaseEntity
     {
         #region Properties
-        public string Name { get; set; } = string.Empty;
+        public string Name { get; set; } = string.Empty; // Editar Documentos
         public string Slug { get; set; } = string.Empty;
         public string Type { get; set; } = string.Empty;
         public List<UserClaim> UserClaims { get; set; }
