@@ -61,7 +61,7 @@ namespace Berger.Extensions.Identity
         public string IpAddress { get; set; } = string.Empty;
         public string Location { get; set; } = string.Empty;
         public bool Expired { get; set; }
-        public bool Revoked { get; set; }
+        public bool Revoked { get; set; } = false;
         public decimal? Latitude { get; set; }
         public decimal? Longitude { get; set; }
         public DateTime? StartsOn { get; set; }

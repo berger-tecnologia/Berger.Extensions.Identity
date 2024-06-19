@@ -19,8 +19,8 @@ namespace Berger.Extensions.Identity
         public bool IsEmailVerified { get; set; }
         public bool IsMobileVerified { get; set; }
         public bool Expired { get; } = false;
-        public bool Banned { get; set; }
-        public bool Locked { get; set; }
+        public bool Banned { get; set; } = false;
+        public bool Locked { get; set; } = false;
         public bool Active { get; set; } = true;
         public DateTime? StartsOn { get; }
         public DateTime? ExpiresOn { get; }
