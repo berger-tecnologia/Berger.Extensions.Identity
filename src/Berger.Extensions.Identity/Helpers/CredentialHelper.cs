@@ -1,20 +1,16 @@
-﻿using Berger.Extensions.Jwt;
-
-namespace Berger.Extensions.Identity
+﻿namespace Berger.Extensions.Identity
 {
     public static class CredentialHelper
     {
-        public static Credential ConfigurePassword(this Credential credential)
-        {
-            var salt = SaltService.Create();
+        //public void SetPassword(this Credential credential)
+        //{
+        //    var salt = SaltService.Create();
 
-            credential.SetSalt(salt);
+        //    credential.SetSalt(salt);
 
-            var hash = credential.Password.CreateHash(salt);
+        //    var hash = credential.Password.CreateHash(salt);
 
-            credential.SetPassword(hash);
-
-            return credential;
-        }
+        //    credential.SetPassword(hash);
+        //}
     }
 }
