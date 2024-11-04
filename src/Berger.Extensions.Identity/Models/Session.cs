@@ -10,14 +10,10 @@ namespace Berger.Extensions.Identity
             this.Revoked = true;
             this.RevokedOn = DateTime.UtcNow;
         }
-        public void SetUserId(Guid userId)
+        public void SetAccountId(Guid accountId)
         {
-            throw new NotImplementedException();
+            this.AccountId = accountId;
         }
-        public void SetDeviceId(Guid deviceId)
-        {
-            throw new NotImplementedException();
-        }        
         public void SetLastUsed()
         {
             this.LastUsedOn = DateTime.UtcNow;
@@ -49,9 +45,9 @@ namespace Berger.Extensions.Identity
         #endregion
 
         #region Properties
-        public Guid UserId { get; }
-        public Guid CredentialId { get; }
-        public Guid DeviceId { get; }
+        public Guid AccountId { get; set; }
+        public Guid TenantId { get; set; }
+        public Guid? DeviceId { get; }
         public Guid? CountryId { get; set; }
         public string Token { get; set; } = string.Empty;
         public string RefreshToken { get; set; } = string.Empty;
