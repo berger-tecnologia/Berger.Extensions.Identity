@@ -14,6 +14,10 @@ namespace Berger.Extensions.Identity
         {
             this.AccountId = accountId;
         }
+        public void SetApplicationId(Guid applicationId)
+        {
+            this.ApplicationId = applicationId;
+        }
         public void SetLastUsed()
         {
             this.LastUsedOn = DateTime.UtcNow;
@@ -45,8 +49,9 @@ namespace Berger.Extensions.Identity
         #endregion
 
         #region Properties
+        public Account Account { get; set; }
         public Guid AccountId { get; set; }
-        public Guid TenantId { get; set; }
+        public Guid ApplicationId { get; set; }
         public Guid? DeviceId { get; }
         public Guid? CountryId { get; set; }
         public string Token { get; set; } = string.Empty;
