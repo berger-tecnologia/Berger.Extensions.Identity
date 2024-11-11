@@ -5,9 +5,6 @@ namespace Berger.Extensions.Identity
     public class Account : BaseEntity
     {
         #region Properties
-        public Guid? UserId { get; set; }
-        public Guid? PhoneId { get; set; } // Temporário... Avaliar com o time
-        public Guid? EntityTypeId { get; set; }
         public string Email { get; set; } = string.Empty;
         public string Password { get; set; } = string.Empty;
         public string Hash { get; set; } = string.Empty;
