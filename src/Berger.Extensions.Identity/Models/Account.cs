@@ -25,14 +25,10 @@ namespace Berger.Extensions.Identity
         #endregion
 
         #region Methods
-        public void SetUserId(Guid userId)
-        {
-            this.UserId = userId;
-        }
-        public void SetPhoneId(Guid phoneId)
-        {
-            this.PhoneId = phoneId;
-        }
+        //public void SetUserId(Guid userId)
+        //{
+        //    this.UserId = userId;
+        //}
         public void SetSalt(string salt)
         {
             this.Salt = salt;
