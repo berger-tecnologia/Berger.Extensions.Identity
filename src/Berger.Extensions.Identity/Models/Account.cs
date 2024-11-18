@@ -5,6 +5,8 @@ namespace Berger.Extensions.Identity
     public class Account : BaseEntity
     {
         #region Properties
+        public Guid? ProfileId { get; set; }
+        public Guid? UserId { get; set; }
         public string Email { get; set; } = string.Empty;
         public string Password { get; set; } = string.Empty;
         public string Hash { get; set; } = string.Empty;
