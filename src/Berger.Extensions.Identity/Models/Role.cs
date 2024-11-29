@@ -6,10 +6,10 @@ namespace Berger.Extensions.Identity
     {
         #region Properties
         public Guid? ApplicationId { get; set; }
-        public string Name { get; set; } = string.Empty;
-        public string Slug { get; set; } = string.Empty;
-        public string Description { get; set; } = string.Empty;
-        public string ConcurrencyStamp { get; set; } = string.Empty;
+        public string Name { get; set; }
+        public string Slug { get; set; }
+        public string Description { get; set; }
+        public string ConcurrencyStamp { get; set; }
         public List<RoleClaim> RoleClaims { get; set; }
         #endregion
 

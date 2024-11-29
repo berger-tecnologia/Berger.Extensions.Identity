@@ -54,13 +54,13 @@ namespace Berger.Extensions.Identity
         public Guid ApplicationId { get; set; }
         public Guid? DeviceId { get; }
         public Guid? CountryId { get; set; }
-        public string Token { get; set; } = string.Empty;
-        public string RefreshToken { get; set; } = string.Empty;
-        public string TokenIssuer { get; set; } = string.Empty;
-        public string TokenAudience { get; set; } = string.Empty;
-        public string SecurityStamp { get; set; } = string.Empty;
-        public string IpAddress { get; set; } = string.Empty;
-        public string Location { get; set; } = string.Empty;
+        public string Token { get; set; }
+        public string RefreshToken { get; set; }
+        public string TokenIssuer { get; set; }
+        public string TokenAudience { get; set; }
+        public string SecurityStamp { get; set; }
+        public string IpAddress { get; set; }
+        public string Location { get; set; }
         public bool Expired { get; set; }
         public bool Revoked { get; set; } = false;
         public decimal? Latitude { get; set; }

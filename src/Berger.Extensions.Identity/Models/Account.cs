@@ -5,14 +5,14 @@ namespace Berger.Extensions.Identity
     public class Account : BaseEntity
     {
         #region Properties
-        public Guid? ProfileId { get; set; }
-        public Guid? UserId { get; set; }
-        public string Email { get; set; } = string.Empty;
-        public string Password { get; set; } = string.Empty;
-        public string Hash { get; set; } = string.Empty;
-        public string Salt { get; set; } = string.Empty;
-        public string SecurityStamp { get; set; } = string.Empty;
-        public string ConcurrencyStamp { get; set; } = string.Empty;
+        //public Guid? ProfileId { get; set; }
+        public Guid UserId { get; set; }
+        public string Email { get; set; }
+        public string Password { get; set; }
+        public string Hash { get; set; }
+        public string Salt { get; set; }
+        public string SecurityStamp { get; set; }
+        public string ConcurrencyStamp { get; set; }
         public int LoginAttempt { get; set; } = 0;
         public bool IsEmailVerified { get; set; }
         public bool Expired { get; } = false;

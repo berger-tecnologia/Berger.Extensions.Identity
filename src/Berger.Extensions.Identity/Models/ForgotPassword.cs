@@ -2,8 +2,8 @@
 
 namespace Berger.Extensions.Identity
 {
-    public class ForgotPassword : BaseEntity, IInput
+    public class ForgotPassword : BaseEntity
     {
-        public string Email { get; set; } = string.Empty;
+        public string Email { get; set; }
     }
 }

@@ -9,8 +9,8 @@ namespace Berger.Extensions.Identity
         public Guid UserId { get; set; }
         public Guid ClaimId { get; set; }
         public Claim Claim { get; set; }
-        public string ClaimType { get; set; } = string.Empty;
-        public string ClaimValue { get; set; } = string.Empty;
+        public string ClaimType { get; set; }
+        public string ClaimValue { get; set; }
         #endregion
 
         #region Methods

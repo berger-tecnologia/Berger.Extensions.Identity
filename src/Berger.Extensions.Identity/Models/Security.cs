@@ -2,7 +2,7 @@
 
 namespace Berger.Extensions.Identity
 {
-    public class Security : BaseEntity, IInput
+    public class Security : BaseEntity
     {
         public Guid AccountId { get; set; }
         public string Passphrase { get; set; }
