@@ -6,7 +6,10 @@ namespace Berger.Extensions.Identity
     {
         #region Properties
         //public Guid? ProfileId { get; set; }
-        public Guid UserId { get; set; }
+        public Guid? UserId { get; set; }
+        public Guid? CompanyId { get; set; }
+        public Guid? MerchantId { get; set; } // Temp..
+        public AccountType AccountType { get; set; }
         public string Email { get; set; }
         public string Password { get; set; }
         public string Hash { get; set; }
