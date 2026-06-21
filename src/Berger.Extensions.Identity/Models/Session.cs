@@ -10,9 +10,9 @@ namespace Berger.Extensions.Identity
             this.Revoked = true;
             this.RevokedOn = DateTime.UtcNow;
         }
-        public void SetAccountId(Guid accountId)
+        public void SetAccountId(Guid userAccountId)
         {
-            this.AccountId = accountId;
+            this.UserAccountId = userAccountId;
         }
         public void SetApplicationId(Guid applicationId)
         {
@@ -49,8 +49,8 @@ namespace Berger.Extensions.Identity
         #endregion
 
         #region Properties
-        //public Account Account { get; set; }
-        public Guid AccountId { get; set; }
+        //public UserAccount UserAccount { get; set; }
+        public Guid UserAccountId { get; set; }
         public Guid ApplicationId { get; set; }
         public Guid? DeviceId { get; }
         public Guid? CountryId { get; set; }

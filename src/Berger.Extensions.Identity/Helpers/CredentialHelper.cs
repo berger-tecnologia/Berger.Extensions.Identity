@@ -2,7 +2,7 @@
 {
     public static class CredentialHelper
     {
-        //public void SetPassword(this Account Account)
+        //public void SetPassword(this UserAccount UserAccount)
         //{
         //    var salt = SaltService.Create();
 

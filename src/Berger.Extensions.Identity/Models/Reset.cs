@@ -5,6 +5,6 @@ namespace Berger.Extensions.Identity
     public class Reset : BaseEntity
     {
         public Guid DeviceId { get; }
-        public Guid AccountId { get; }
+        public Guid UserAccountId { get; }
     }
 }
