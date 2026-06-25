@@ -49,7 +49,7 @@ namespace Berger.Extensions.Identity
         #endregion
 
         #region Properties
-        //public UserAccount UserAccount { get; set; }
+        //public UserCredential UserCredential { get; set; }
         public Guid UserAccountId { get; set; }
         public Guid ApplicationId { get; set; }
         public Guid? DeviceId { get; }
