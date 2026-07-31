@@ -2,7 +2,7 @@
 
 namespace Berger.Extensions.Identity
 {
-    public class UserRole : BaseEntity, IRole
+    public class UserRole : BaseEntity
     {
         #region Properties
         public Guid UserId { get; set; }
